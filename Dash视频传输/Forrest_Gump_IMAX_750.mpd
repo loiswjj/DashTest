@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="static"
+	mediaPresentationDuration="PT31.0S"
+	minBufferTime="PT6.1S">
+	<ProgramInformation>
+	</ProgramInformation>
+	<Period id="0" start="PT18.0S">
+		<AdaptationSet id="0" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="0" mimeType="video/mp4" codecs="avc1.64001e" bandwidth="748373" width="640" height="352" frameRate="24000/1001">
+				<BaseURL>Forrest_Gump_IMAX_750-stream0.m4s</BaseURL>
+				<SegmentList timescale="1000000" duration="3086417" startNumber="11">
+					<Initialization range="0-787" />
+					<SegmentURL mediaRange="1896845-1944327" />
+					<SegmentURL mediaRange="1944328-2138517" indexRange="1944328-1944379" />
+					<SegmentURL mediaRange="2138518-2228784" />
+					<SegmentURL mediaRange="2228785-2382485" indexRange="2228785-2228836" />
+					<SegmentURL mediaRange="2382486-2912045" indexRange="2382486-2382537" />
+				</SegmentList>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="1" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="1" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="128073" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<BaseURL>Forrest_Gump_IMAX_750-stream1.m4s</BaseURL>
+				<SegmentList timescale="1000000" duration="3086417" startNumber="11">
+					<Initialization range="0-736" />
+					<SegmentURL mediaRange="293506-309270" />
+					<SegmentURL mediaRange="309271-328903" />
+					<SegmentURL mediaRange="328904-352699" />
+					<SegmentURL mediaRange="352700-402907" />
+					<SegmentURL mediaRange="402908-509333" />
+				</SegmentList>
+			</Representation>
+		</AdaptationSet>
+	</Period>
+</MPD>

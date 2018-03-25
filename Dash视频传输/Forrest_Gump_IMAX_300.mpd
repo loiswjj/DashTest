@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="static"
+	mediaPresentationDuration="PT31.0S"
+	minBufferTime="PT5.8S">
+	<ProgramInformation>
+	</ProgramInformation>
+	<Period id="0" start="PT18.0S">
+		<AdaptationSet id="0" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="0" mimeType="video/mp4" codecs="avc1.64001e" bandwidth="294813" width="640" height="352" frameRate="24000/1001">
+				<BaseURL>Forrest_Gump_IMAX_300-stream0.m4s</BaseURL>
+				<SegmentList timescale="1000000" duration="2919583" startNumber="11">
+					<Initialization range="0-786" />
+					<SegmentURL mediaRange="794722-812340" />
+					<SegmentURL mediaRange="812341-873912" />
+					<SegmentURL mediaRange="873913-902420" />
+					<SegmentURL mediaRange="902421-960787" />
+					<SegmentURL mediaRange="960788-1152742" indexRange="960788-960839" />
+				</SegmentList>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="1" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="1" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="122788" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<BaseURL>Forrest_Gump_IMAX_300-stream1.m4s</BaseURL>
+				<SegmentList timescale="1000000" duration="2919583" startNumber="11">
+					<Initialization range="0-739" />
+					<SegmentURL mediaRange="282196-297953" />
+					<SegmentURL mediaRange="297954-318285" />
+					<SegmentURL mediaRange="318286-342580" />
+					<SegmentURL mediaRange="342581-390737" />
+					<SegmentURL mediaRange="390738-488822" />
+				</SegmentList>
+			</Representation>
+		</AdaptationSet>
+	</Period>
+</MPD>
